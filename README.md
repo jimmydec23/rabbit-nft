@@ -1,6 +1,12 @@
 ## Rabbit NFT
 ![demo](demo.gif)
 
+## prerequisite env
+* docker
+* golang
+* node
+* yarn
+
 ## development
 * install hardhat
   ```
@@ -12,10 +18,15 @@
   cd ui
   yarn install
   ```
-* start hardhat
+* start hardhat and deploy contract
   ```
   make hh-node
+  make hh-deploy
   ``` 
+* start ipfs
+  ```
+  make start-ipfs
+  ```
 * start server
   ```
   make start-server

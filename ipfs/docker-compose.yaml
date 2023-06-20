@@ -1,0 +1,12 @@
+version: "2.0"
+services:
+  ipfs:
+    container_name: ipfs
+    image: ipfs/go-ipfs:latest
+    restart: always
+    volumes:
+      - ./ipfs_data:/data/ipfs
+    ports:
+      - 4001:4001 # ipfs swarm - expose if needed/wanted
+      - 5001:5001 # ipfs api - expose if needed/wanted
+      - 18080:8080 # ipfs gateway - expose if needed/wanted

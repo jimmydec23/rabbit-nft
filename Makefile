@@ -52,6 +52,11 @@ pr-clean:
 clu-deploy:
 	cd hardhat && npx hardhat run scripts/private-deploy.js --network cluster
 
+# start ipfs
+.PHONY: start-ipfs
+start-ipfs:
+	cd ipfs && docker-compose up -d
+
 # start server
 .PHONY: start-server
 start-server:
