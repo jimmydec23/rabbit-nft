@@ -1,4 +1,6 @@
 ## Rabbit NFT
+An NFT market.
+
 ![demo](demo.gif)
 
 ## prerequisite env
